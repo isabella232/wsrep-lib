@@ -28,6 +28,9 @@
  * condition variables.
  */
 
+#ifndef WSREP_THREAD_SERVICE_HPP
+#define WSREP_THREAD_SERVICE_HPP
+
 #include <cstddef> // size_t
 #include "compiler.hpp"
 
@@ -98,3 +101,5 @@ namespace wsrep
         virtual int broadcast(cond*) WSREP_NOEXCEPT = 0;
     };
 } // namespace wsrep
+
+#endif // WSREP_THREAD_SERVICE_HPP
